@@ -27,3 +27,8 @@ variable "min_size" {
 variable "max_size" {
   description = "The maxinum number of ec2 instances in the ASG"
 }
+
+variable custom_tags {
+  type = map(string)
+  default = {}
+}
