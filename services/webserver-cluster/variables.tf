@@ -32,3 +32,12 @@ variable custom_tags {
   type = map(string)
   default = {}
 }
+
+variable "ami" {
+  default = "ami-0c55b159cbfafe1f0"
+  type = string
+}
+
+variable "server_text" {
+  default = "Hello, World!"
+}
