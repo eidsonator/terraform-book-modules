@@ -32,7 +32,7 @@ resource "aws_autoscaling_group" "example" {
     content {
       key = tag.key
       value = tag.value
-      propogate_at_launch = true
+      propagate_at_launch = true
     }
   }
 }
