@@ -40,4 +40,5 @@ variable "ami" {
 
 variable "server_text" {
   default = "Hello, World!"
+  type = string
 }
