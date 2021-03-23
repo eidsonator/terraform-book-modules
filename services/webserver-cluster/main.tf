@@ -65,6 +65,16 @@ resource "aws_lb" "example" {
   security_groups = [ aws_security_group.alb.id ]
 }
 
+resource aws_security_group_rule ssh {
+  type = "ingress"
+  security_group_id = aws_security_group.instance.id
+
+  from_port = 22
+  to_port = 22
+  protocol = local.tcp_protocol
+  cidr_blocks = local.all_ips
+}
+
 resource "aws_lb_listener" "http" {
   load_balancer_arn = aws_lb.example.arn
   port = local.http_port
