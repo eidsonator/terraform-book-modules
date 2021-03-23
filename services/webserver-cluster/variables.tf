@@ -34,7 +34,7 @@ variable custom_tags {
 }
 
 variable "ami" {
-  default = "ami-0c55b159cbfafe1f0"
+  default = "ami-02e680c4540db351e"
   type = string
 }
 
